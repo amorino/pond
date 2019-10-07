@@ -1,9 +1,10 @@
 import App from 'next/app';
 import Link from 'next/link';
 import React from 'react';
+import GlobalStyle from '../styles/global';
 
 export default class Pond extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 
     if (Component.getInitialProps) {
@@ -17,6 +18,7 @@ export default class Pond extends App {
     const { Component, pageProps } = this.props;
     return (
       <>
+        <GlobalStyle />
         <header>
           <nav>
             <Link href="/">

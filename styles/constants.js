@@ -30,7 +30,7 @@ export const colors = {
 };
 
 export const provider = {
-  breakpoints: [`${sizes.mobile}`, `${sizes.tablet}px`, `${sizes.desktop}px`],
+  breakpoints: [`${sizes.mobile}px`, `${sizes.tablet}px`, `${sizes.desktop}px`],
   space: [0, 6, 12, 18, 24],
   fontSizes: [12, 14, 16, 24, 36, 72],
 };

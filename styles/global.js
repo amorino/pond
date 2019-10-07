@@ -1,14 +1,10 @@
 // @flow
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { colors, fontFamily } from './constants';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body, html {
     background-color: ${colors.white};
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
     font-family: ${fontFamily.gotham};
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -26,3 +22,5 @@ injectGlobal`
     text-decoration: none;
   }
 `;
+
+export default GlobalStyle;
